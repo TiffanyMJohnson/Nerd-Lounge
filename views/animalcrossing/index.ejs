@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Animal Crossing</title>
+</head>
+<header>
+    <nav>
+        <a href="/Nerd_Lounge">Home</a> | <a href="/animal crossing/new">Create a Post</a> | <a href="/signout">Sign Out</a>
+    </nav>
+</header>
+<body>
+    <h1>Animal Crossing Forum</h1>
+
+    <ul>
+        <% if (fandom === "animalcrossing") { %>
+
+            <% for (let i = 0; i < posts.length; i++) { %>
+                <li>
+                    <a href="/animalcrossing/<%=posts[i].id%>"><%=posts[i].title %> </a>
+                <% } %>
+
+                <form action="/fruits/<%=fruits[i].id%>?_method=DELETE" method="POST">
+                    <input type="submit" value="Delete">
+                </form>
+                </li>
+        <% } %> 
+
+
+    </ul>
+    
+</body>
+</html>

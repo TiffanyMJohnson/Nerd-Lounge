@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Animal Crossing Post</title>
+</head>
+<header>
+    <nav>
+        <a href="/Nerd_Lounge">Home</a> | <a href="/animal crossing">Back to Forum</a> | <a href="/signout">Sign Out</a>
+    </nav>
+</header>
+<body>
+    <h1><%=post.title%></h1>
+    <p><%=post.bodyOfPost%></p> </br>
+    <h5><%=post.authorName%></h5></br>
+    <h5><%=post.date%></h5></br>
+
+    <a href="/animalcrossing/<%=posts[i].id%>/edit">Edit</a>
+    <form action="/animalcrossing/<%=posts[i].id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete">
+    </form>
+
+
+    
+</body>
+</html>

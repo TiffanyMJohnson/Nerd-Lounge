@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>New Post</title>
+</head>
+<body>
+    <h1>Add a New Post</h1>
+    
+    <form action="/posts" method="POST">
+        Title: <input type="text" name="title" /> <br/>
+        Body:  <input type="textarea" name="bodyOfPost"  rows="10" cols="30"/> <br/>
+        Author Name: <input type="text" name="authorName" value="<%=username%>"> <br/>
+        Date: <input type="datetime" name="date" value="datetime" /> <br/>
+        Fandom: <input list="Fandoms" name="fandom"/> <br/>
+        <datalist id="fandoms">
+            <option value="Harry Potter">
+            <option value="Marvel">
+            <option value="Star Wars">
+            <option value="Dragonball Z">
+            <option value="Animal Crossing">
+          </datalist>
+  
+        <input type="submit" value="Create Fruit" />
+    </form>
+    <a href="/Nerd_Lounge/animalcrossing">Back</a>
+</body>
+</html>

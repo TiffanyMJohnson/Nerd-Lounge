@@ -1,11 +1,13 @@
+//setup
 const express = require("express")
 const app = express()
 require('dotenv').config()
 const PORT = process.env.PORT
 
 const methodOverride = require('method-override')
+const session = require("express-session")
 
-const Post = require('./models/post')
+const Post = require('./models/posts')
 
 const mongoose = require('mongoose')
 
@@ -30,6 +32,8 @@ db.on("discconnected", () => {
     console.log("mongo disconneted")
 })
 
+//middleware
+
 app.use(express.urlencoded({extended:true}))
 app.use(methodOverride('_method'))
 
@@ -43,23 +47,24 @@ app.use(session({
     saveUninitialized: false
 }))
 
-const userController = require("./controllers/userController")
-app.use('/users', userController)
+//app
+// const userController = require("./controllers/userController")
+// app.use('/users', userController)
 
 const animalcrossingController = require("./controllers/animalcrossingController")
 app.use('/animalcrossing', animalcrossingController)
 
-const dragonballzController = require("./controllers/dragonballzController")
-app.use('/dragonballz', dragonballzController)
+// const dragonballzController = require("./controllers/dragonballzController")
+// app.use('/dragonballz', dragonballzController)
 
-const harrypotterController = require("./controllers/harrypotterController")
-app.use('/harrypotter', harrypotterController)
+// const harrypotterController = require("./controllers/harrypotterController")
+// app.use('/harrypotter', harrypotterController)
 
-const marvelController = require("./controllers/marvelController")
-app.use('/marvel', marvelController)
+// const marvelController = require("./controllers/marvelController")
+// app.use('/marvel', marvelController)
 
-const starwarsController = require("./controllers/starwarsController")
-app.use('/starwars', starwarsController)
+// const starwarsController = require("./controllers/starwarsController")
+// app.use('/starwars', starwarsController)
 
 
 app.get('/Nerd_Lounge', (req, res) => {
@@ -67,7 +72,7 @@ app.get('/Nerd_Lounge', (req, res) => {
 })
 
 app.get('/Nerd_Lounge/home', (req, res) => {
-    res.send("you have hit the home page")
+    res.render("index.ejs")
 })
 
 app.listen(PORT, ()=> {
