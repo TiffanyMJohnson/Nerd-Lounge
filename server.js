@@ -1,0 +1,75 @@
+const express = require("express")
+const app = express()
+require('dotenv').config()
+const PORT = process.env.PORT
+
+const methodOverride = require('method-override')
+
+const Post = require('./models/post')
+
+const mongoose = require('mongoose')
+
+const mongoURI = process.env.MONGODBURI
+
+const db = mongoose.connection
+
+mongoose.connect(mongoURI, {
+    useNewURLParser:true,
+    useUnifiedTopology:true
+}, () => {
+    console.log('database connected')
+})
+
+db.on('error', (error) => {
+    console.log("ERROR:", error)
+})
+db.on("connected", () => {
+    console.log("mongo connected")
+})
+db.on("discconnected", () => {
+    console.log("mongo disconneted")
+})
+
+app.use(express.urlencoded({extended:true}))
+app.use(methodOverride('_method'))
+
+const SESSION_SECRET = process.env.SESSION_SECRET
+console.log("here's SESSION_SECRET")
+console.log(SESSION_SECRET)
+
+app.use(session({
+    secret: SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false
+}))
+
+const userController = require("./controllers/userController")
+app.use('/users', userController)
+
+const animalcrossingController = require("./controllers/animalcrossingController")
+app.use('/animalcrossing', animalcrossingController)
+
+const dragonballzController = require("./controllers/dragonballzController")
+app.use('/dragonballz', dragonballzController)
+
+const harrypotterController = require("./controllers/harrypotterController")
+app.use('/harrypotter', harrypotterController)
+
+const marvelController = require("./controllers/marvelController")
+app.use('/marvel', marvelController)
+
+const starwarsController = require("./controllers/starwarsController")
+app.use('/starwars', starwarsController)
+
+
+app.get('/Nerd_Lounge', (req, res) => {
+    res.render("show.ejs")
+})
+
+app.get('/Nerd_Lounge/home', (req, res) => {
+    res.send("you have hit the home page")
+})
+
+app.listen(PORT, ()=> {
+    console.log("Server is Running")
+})
