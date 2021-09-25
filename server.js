@@ -48,11 +48,11 @@ app.use(session({
 }))
 
 //app
-// const userController = require("./controllers/userController")
-// app.use('/users', userController)
+const userController = require("./controllers/userController")
+app.use('/Nerd_Lounge/users', userController)
 
 const animalcrossingController = require("./controllers/animalcrossingController")
-app.use('/animalcrossing', animalcrossingController)
+app.use('/Nerd_Lounge/animalcrossing', animalcrossingController)
 
 // const dragonballzController = require("./controllers/dragonballzController")
 // app.use('/dragonballz', dragonballzController)
@@ -68,11 +68,11 @@ app.use('/animalcrossing', animalcrossingController)
 
 
 app.get('/Nerd_Lounge', (req, res) => {
-    res.render("show.ejs")
+    res.render("welcome.ejs")
 })
 
 app.get('/Nerd_Lounge/home', (req, res) => {
-    res.render("index.ejs")
+    res.render("home.ejs")
 })
 
 app.listen(PORT, ()=> {

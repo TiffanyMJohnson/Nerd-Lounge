@@ -5,12 +5,13 @@
 <body>
     <h1>Add a New Post</h1>
     
-    <form action="/posts" method="POST">
+    <form action="/Nerd_Lounge/animalcrossing" method="POST">
         Title: <input type="text" name="title" /> <br/>
         Body:  <input type="textarea" name="bodyOfPost"  rows="10" cols="30"/> <br/>
-        Author Name: <input type="text" name="authorName" value="<%=username%>"> <br/>
-        Date: <input type="datetime" name="date" value="datetime" /> <br/>
-        Fandom: <input list="Fandoms" name="fandom"/> <br/>
+        Author Name: <input type="text" name="authorName" > <br/>
+        Date: <input type="datetime-local" name="date" /> <br/>
+        <label>
+        Fandom: <input list="fandoms" name="fandom"/></label> </br>
         <datalist id="fandoms">
             <option value="Harry Potter">
             <option value="Marvel">
@@ -19,7 +20,7 @@
             <option value="Animal Crossing">
           </datalist>
   
-        <input type="submit" value="Create Fruit" />
+        <input type="submit" value="Post to Forum" />
     </form>
     <a href="/Nerd_Lounge/animalcrossing">Back</a>
 </body>

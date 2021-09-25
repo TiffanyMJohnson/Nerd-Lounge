@@ -6,7 +6,7 @@ const postSchema = new Schema ({
     bodyOfPost: {type: String, required: true},
     authorName: {type: String, required: true},
     date: {type: Date, required: true},
-    fandom: {type: Date, required: true}
+    fandom: {type: String, required: true}
 })
 
 const Post = model('Post', postSchema)

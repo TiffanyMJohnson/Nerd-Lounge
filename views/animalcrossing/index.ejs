@@ -6,27 +6,27 @@
 </head>
 <header>
     <nav>
-        <a href="/Nerd_Lounge">Home</a> | <a href="/animal crossing/new">Create a Post</a> | <a href="/signout">Sign Out</a>
+        <a href="/Nerd_Lounge/home">Home</a> | <a href="/animalcrossing/new">Create a Post</a> | <a href="/signout">Sign Out</a>
     </nav>
 </header>
 <body>
     <h1>Animal Crossing Forum</h1>
 
     <ul>
-        <% if (fandom === "animalcrossing") { %>
+        
 
             <% for (let i = 0; i < posts.length; i++) { %>
+                <% if (posts[i].fandom === "Animal Crossing") { %>
                 <li>
-                    <a href="/animalcrossing/<%=posts[i].id%>"><%=posts[i].title %> </a>
-                <% } %>
+                    <a href="/Nerd_Lounge/animalcrossing/<%=posts[i].id%>"><%=posts[i].title %> </a>
 
-                <form action="/fruits/<%=fruits[i].id%>?_method=DELETE" method="POST">
-                    <input type="submit" value="Delete">
-                </form>
+                <% } else {%> 
+                        <h2>No Post Found</h2>
+                    <%} %>
+
+        
                 </li>
-        <% } %> 
-
-
+        <%} %>
     </ul>
     
 </body>
