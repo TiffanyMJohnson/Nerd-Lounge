@@ -74,6 +74,31 @@ router.delete("/:id", (req, res) => {
     })
 })
 
+router.get("/:id/edit", (req, res) => {
+    Post.findById(req.params.id, (error, foundPost) => {
+        if (error) {
+            console.log(error)
+        } else {
+            res.render("../views/animalcrossing/edit.ejs", {
+                post: foundPost
+            })
+        }
+    })
+})
 
+router.put("/:id", (req, res) => {
+    Post.findByIdAndUpdate (
+        req.params.id,
+        req.body,
+        {new: true},
+        (error, updatedPost) => {
+            if (error) {
+                console.log(error)
+            } else {
+                res.redirect('/Nerd_Lounge/animalcrossing')
+            }
+        }
+    )
+})
 
 module.exports = router

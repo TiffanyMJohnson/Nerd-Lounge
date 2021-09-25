@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Update Post</title>
+</head>
+<body>
+    <h1>Update Post</h1>
+    
+    <form action="/Nerd_Lounge/animalcrossing/<%=post.id%>?_method=PUT" method="POST">
+        Title: <input type="text" name="title" value="<%=post.title%>" /> <br/>
+        Body:  <input type="textarea" name="bodyOfPost"  rows="10" cols="30" value="<%=post.bodyOfPost%>"/> <br/>
+        Author Name: <input type="text" name="authorName" value="<%=post.authorName%>" > <br/>
+        Date: <input type="datetime-local" name="date" /> <br/>
+        <label>
+        Fandom: <input list="fandoms" name="fandom"/></label> </br>
+        <datalist id="fandoms">
+            <option value="Harry Potter">
+            <option value="Marvel">
+            <option value="Star Wars">
+            <option value="Dragonball Z">
+            <option value="Animal Crossing">
+          </datalist>
+  
+        <input type="submit" value="Update Post" />
+    </form>
+    <a href="/Nerd_Lounge/animalcrossing">Back</a>
+</body>
+</html>
