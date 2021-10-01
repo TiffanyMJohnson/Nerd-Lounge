@@ -1,0 +1,224 @@
+body {
+    background-image: url("https://i.imgur.com/iZq9j0y.jpg");
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 40px;
+    color:gold;
+    list-style-type: outside none none;
+}
+a {
+    color:white;
+    text-align: center;
+ 
+   
+    
+}
+ul {
+    list-style-type: none;
+}
+#welcome {
+    color:white;
+}
+
+form {
+    max-width: 300px;
+    display: inline-block;
+    font-size: 30px;
+}
+h1 {
+    margin: 0;
+    font-family: fantasy;
+}
+
+#edit {
+    color: black;
+    text-decoration: none;
+}
+
+#nerd {
+    padding-top: 50px;
+    text-shadow: 0 2px black, 0 3px white;
+    margin: 0;
+    text-decoration: underline
+
+}
+
+#nerdwelcome {
+    padding-top: 50px;
+    text-shadow: 0 2px black, 0 3px white;
+    margin: 0;
+    text-decoration: underline;
+}
+#nerdpara {
+ 
+    text-align: center;
+    font-size: 34px;
+    margin: 0;
+    color: gold;
+  
+}
+#rules {
+   
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    color: rgb(9, 255, 0);
+}
+
+#glasses {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0;
+
+  
+}
+
+#glasses1 {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0;
+
+}
+
+#title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#signout {
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+#acpara {
+    color: white
+}
+
+#hpnav {
+    color: rgb(117, 97, 6);
+}
+
+#mpara {
+    color: white;
+}
+
+#swpara {
+    color: white;
+}
+
+#dbznav {
+    color: black;
+    font-size: 35px;
+}
+#animalcrossing {
+    position: absolute;
+    background-image: url("https://i.imgur.com/Tp7HPjh.jpg");
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    list-style-type: outside none none;
+    color: gold;
+    font-size: 30px;
+    min-width: 100%
+}
+
+#acimage {
+    max-height: 300px;
+    max-width: 500px;
+}
+
+
+
+#harrypotter {
+    position: absolute;
+    background-image: url("https://i.imgur.com/s7BbLBX.png");
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    list-style-type: outside none none;
+    color: black;
+    font-size: 30px;
+    min-width: 100%
+}
+
+#hpimage {
+    max-height: 300px;
+    max-width: 500px;
+}
+
+#dragonballz {
+    position: absolute;
+    background-image: url("https://i.imgur.com/9PFk3PX.png");
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    list-style-type: outside none none;
+    color: red;
+    font-size: 30px;
+    min-width: 100%
+}
+#dbzimage {
+    max-height: 400px;
+    max-width: 600px;
+}
+
+#marvel {
+    position: absolute;
+    background-image: url("https://i.imgur.com/wcowlHV.jpg");
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    list-style-type: outside none none;
+    color: red;
+    font-size: 30px;
+    min-width: 100%
+}
+#mimage {
+    max-height: 300px;
+    max-width: 500px;
+}
+
+#starwars {
+    position: absolute;
+    background-image: url("https://i.imgur.com/SdmKH3I.png");
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    list-style-type: outside none none;
+    color: gold;
+    font-size: 30px;
+    min-width: 100%
+}
+#swimage {
+    max-height: 300px;
+    max-width: 500px;
+}
+header {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}

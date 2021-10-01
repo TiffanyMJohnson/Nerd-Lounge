@@ -9,7 +9,8 @@ const authRequired = (req, res, next) => {
     if (req.session.currentUser) {
         next()
     } else {
-        res.send('You must be logged in')
+        console.log('You must be logged in')
+        
     }
 }
 

@@ -33,7 +33,7 @@ db.on("discconnected", () => {
 })
 
 //middleware
-
+app.use(express.static("public"))
 app.use(express.urlencoded({extended:true}))
 app.use(methodOverride('_method'))
 
@@ -54,17 +54,17 @@ app.use('/Nerd_Lounge/users', userController)
 const animalcrossingController = require("./controllers/animalcrossingController")
 app.use('/Nerd_Lounge/animalcrossing', animalcrossingController)
 
-// const dragonballzController = require("./controllers/dragonballzController")
-// app.use('/dragonballz', dragonballzController)
+const dragonballzController = require("./controllers/dragonballzController")
+app.use('/Nerd_Lounge/dragonballz', dragonballzController)
 
-// const harrypotterController = require("./controllers/harrypotterController")
-// app.use('/harrypotter', harrypotterController)
+const harrypotterController = require("./controllers/harrypotterController")
+app.use('/Nerd_Lounge/harrypotter', harrypotterController)
 
-// const marvelController = require("./controllers/marvelController")
-// app.use('/marvel', marvelController)
+const marvelController = require("./controllers/marvelController")
+app.use('/Nerd_Lounge/marvel', marvelController)
 
-// const starwarsController = require("./controllers/starwarsController")
-// app.use('/starwars', starwarsController)
+const starwarsController = require("./controllers/starwarsController")
+app.use('/Nerd_Lounge/starwars', starwarsController)
 
 
 app.get('/Nerd_Lounge', (req, res) => {
