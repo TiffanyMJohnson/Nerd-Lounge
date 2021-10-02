@@ -46,3 +46,4 @@ Future planned enchancements:
 The ability to comment on a post.
 The ability to upload an image into a post.
 Enable ability to only allow auther who created post to delete or edit.
+More forums and possibly split the forums into categories (movies, books, video games, etc)
