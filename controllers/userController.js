@@ -19,7 +19,7 @@ router.post('/register', (req, res) => {
             res.send('That username is already taken')
         } else {
             User.create(req.body,(error, createdUser) => {
-                res.redirect('/Nerd_Lounge/users/signin')
+                res.redirect('/users/signin')
             })
         }
     })
@@ -35,7 +35,7 @@ router.post('/signin', (req, res)=> {
             const validLogin = bcrypt.compareSync(req.body.password, foundUser.password)
             if (validLogin) {
                 req.session.currentUser = foundUser
-                res.redirect('/Nerd_Lounge/home')
+                res.redirect('/home')
             }else {
                 res.send("invalid username or password")
             }
@@ -47,7 +47,7 @@ router.post('/signin', (req, res)=> {
 
 router.get('/signout', (req, res) => {
     req.session.destroy()
-    res.redirect('/Nerd_Lounge')
+    res.redirect('/')
 })
 
 module.exports = router
