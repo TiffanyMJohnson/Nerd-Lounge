@@ -45,4 +45,4 @@ Examples of completed App
 Future planned enchancements:
 The ability to comment on a post.
 The ability to upload an image into a post.
-Enable able to only allow auther who created post to delete or edit.
+Enable ability to only allow auther who created post to delete or edit.
