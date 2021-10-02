@@ -14,7 +14,7 @@
 <body>
     <h1>Update Post</h1>
     
-    <form action="/Nerd_Lounge/animalcrossing/<%=post.id%>?_method=PUT" method="POST">
+    <form action="/animalcrossing/<%=post.id%>?_method=PUT" method="POST">
         Title: <input type="text" name="title" value="<%=post.title%>" /> <br/>
         Body:  <input type="textarea" name="bodyOfPost"  rows="10" cols="30" value="<%=post.bodyOfPost%>"/> <br/>
         Author Name: <input type="text" name="authorName" value="<%=post.authorName%>" > <br/>
@@ -31,7 +31,7 @@
   
         <input type="submit" value="Update Post" />
     </form>
-    <a href="/Nerd_Lounge/animalcrossing">Back</a>
+    <a href="/animalcrossing">Back</a>
 </body>
 </div>
 </html>

@@ -9,7 +9,7 @@
 <header >
     <img id="dbzimage" src="https://i.imgur.com/IAMXcKl.png">
     <nav>
-        <a id="dbznav" href="/Nerd_Lounge/home">Home</a> | <a id="dbznav" href="/Nerd_Lounge/dragonballz">Back to Forum</a> | <a id="dbznav" href="/Nerd_Lounge/users/signout">Sign Out</a>
+        <a id="dbznav" href="/home">Home</a> | <a id="dbznav" href="/dragonballz">Back to Forum</a> | <a id="dbznav" href="/users/signout">Sign Out</a>
     </nav>
 </header>
 <body>
@@ -21,9 +21,9 @@
     <!-- trying to get it to only show the edit and delete buttons for the person who created the post-->
     <!--  if (post.authorName === user.username ) { %> -->
         <button>
-            <a id="edit" href="/Nerd_Lounge/dragonballz/<%=post.id%>/edit">Edit</a>
+            <a id="edit" href="/dragonballz/<%=post.id%>/edit">Edit</a>
         </button>
-    <form action="/Nerd_Lounge/dragonballz/<%=post.id%>?_method=DELETE" method="POST">
+    <form action="/dragonballz/<%=post.id%>?_method=DELETE" method="POST">
         <input type="submit" value="Delete">
     </form>
     <!--  }  -->

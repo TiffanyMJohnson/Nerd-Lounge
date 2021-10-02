@@ -9,7 +9,7 @@
 <header >
     <img id="swimage" src="https://i.imgur.com/Ohr498z.png">
     <nav>
-        <a href="/Nerd_Lounge/home">Home</a> | <a href="/Nerd_Lounge/starwars/new">Create a Post</a> | <a href="/Nerd_Lounge/users/signout">Sign Out</a>
+        <a href="/home">Home</a> | <a href="/starwars/new">Create a Post</a> | <a href="/users/signout">Sign Out</a>
     </nav>
 </header>
 <body>
@@ -21,7 +21,7 @@
             <% for (let i = 0; i < posts.length; i++) { %>
                 <% if (posts[i].fandom === "Star Wars") { %>
                 <li>
-                    <a href="/Nerd_Lounge/starwars/<%=posts[i].id%>"><%=posts[i].title %> </a>
+                    <a href="/starwars/<%=posts[i].id%>"><%=posts[i].title %> </a>
 
                 <% } else {%> 
                         <% console.log('no post found') %>

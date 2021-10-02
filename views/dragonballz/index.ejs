@@ -9,7 +9,7 @@
 <header>
     <img id="dbzimage" src="https://i.imgur.com/IAMXcKl.png">
     <nav>
-        <a id="dbznav" href="/Nerd_Lounge/home">Home</a> | <a id="dbznav" href="/Nerd_Lounge/dragonballz/new">Create a Post</a> | <a id="dbznav" href="/Nerd_Lounge/users/signout">Sign Out</a>
+        <a id="dbznav" href="/home">Home</a> | <a id="dbznav" href="/dragonballz/new">Create a Post</a> | <a id="dbznav" href="/users/signout">Sign Out</a>
     </nav>
 </header>
 <body>
@@ -21,7 +21,7 @@
             <% for (let i = 0; i < posts.length; i++) { %>
                 <% if (posts[i].fandom === "Dragonball Z") { %>
                 <li>
-                    <a id="dbznav" href="/Nerd_Lounge/dragonballz/<%=posts[i].id%>"><%=posts[i].title %> </a>
+                    <a id="dbznav" href="/dragonballz/<%=posts[i].id%>"><%=posts[i].title %> </a>
 
                 <% } else {%> 
                         <% console.log("no post found") %>

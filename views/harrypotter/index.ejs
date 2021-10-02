@@ -9,7 +9,7 @@
 <header >
     <img id="hpimage" src="https://i.imgur.com/Iqye6sd.png">
     <nav >
-        <a id="hpnav" href="/Nerd_Lounge/home">Home</a> | <a id="hpnav" href="/Nerd_Lounge/harrypotter/new">Create a Post</a> | <a id="hpnav" href="/Nerd_Lounge/users/signout">Sign Out</a>
+        <a id="hpnav" href="/home">Home</a> | <a id="hpnav" href="/harrypotter/new">Create a Post</a> | <a id="hpnav" href="/users/signout">Sign Out</a>
     </nav>
 </header>
 <body>
@@ -21,7 +21,7 @@
             <% for (let i = 0; i < posts.length; i++) { %>
                 <% if (posts[i].fandom === "Harry Potter") { %>
                 <li>
-                    <a id="hpnav" href="/Nerd_Lounge/harrypotter/<%=posts[i].id%>"><%=posts[i].title %> </a>
+                    <a id="hpnav" href="/harrypotter/<%=posts[i].id%>"><%=posts[i].title %> </a>
 
                 <% } else {%> 
                         <% console.log("no post found") %>

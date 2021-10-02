@@ -10,7 +10,7 @@
 <header>
     <img id="acimage" src="https://animalcrossingworld.com/wp-content/uploads/2020/06/animal-crossing-new-horizons-guides-section-banner.png">
     <nav id="acnav">
-        <a href="/Nerd_Lounge/home">Home</a> | <a href="/Nerd_Lounge/animalcrossing/new">Create a Post</a> | <a href="/Nerd_Lounge/users/signout">Sign Out</a>
+        <a href="/home">Home</a> | <a href="/animalcrossing/new">Create a Post</a> | <a href="/users/signout">Sign Out</a>
     </nav>
 </header>
 
@@ -21,7 +21,7 @@
             <% for (let i = 0; i < posts.length; i++) { %>
                 <% if (posts[i].fandom === "Animal Crossing") { %>
                 <li>
-                    <a id="acnav" href="/Nerd_Lounge/animalcrossing/<%=posts[i].id%>"><%=posts[i].title %> </a>
+                    <a id="acnav" href="/animalcrossing/<%=posts[i].id%>"><%=posts[i].title %> </a>
 
                 <% } else {%> 
                         <% console.log('no post found') %>

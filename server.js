@@ -49,29 +49,29 @@ app.use(session({
 
 //app
 const userController = require("./controllers/userController")
-app.use('/Nerd_Lounge/users', userController)
+app.use('/users', userController)
 
 const animalcrossingController = require("./controllers/animalcrossingController")
-app.use('/Nerd_Lounge/animalcrossing', animalcrossingController)
+app.use('/animalcrossing', animalcrossingController)
 
 const dragonballzController = require("./controllers/dragonballzController")
-app.use('/Nerd_Lounge/dragonballz', dragonballzController)
+app.use('/dragonballz', dragonballzController)
 
 const harrypotterController = require("./controllers/harrypotterController")
-app.use('/Nerd_Lounge/harrypotter', harrypotterController)
+app.use('/harrypotter', harrypotterController)
 
 const marvelController = require("./controllers/marvelController")
-app.use('/Nerd_Lounge/marvel', marvelController)
+app.use('/marvel', marvelController)
 
 const starwarsController = require("./controllers/starwarsController")
-app.use('/Nerd_Lounge/starwars', starwarsController)
+app.use('/starwars', starwarsController)
 
 
-app.get('/Nerd_Lounge', (req, res) => {
+app.get('/', (req, res) => {
     res.render("welcome.ejs")
 })
 
-app.get('/Nerd_Lounge/home', (req, res) => {
+app.get('/home', (req, res) => {
     res.render("home.ejs")
 })
 

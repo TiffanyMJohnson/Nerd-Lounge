@@ -53,7 +53,7 @@ router.post('/', (req, res) => {
                     res.send(error)
                 } else { 
                     console.log(createdPost)
-                    res.redirect('/Nerd_Lounge/harrypotter')
+                    res.redirect('/harrypotter')
                 }
             })
         } else {
@@ -69,7 +69,7 @@ router.delete("/:id", (req, res) => {
         if (error) {
             console.log(error)
         } else {
-            res.redirect('/Nerd_Lounge/harrypotter')
+            res.redirect('/harrypotter')
         }
     })
 })
@@ -95,7 +95,7 @@ router.put("/:id", (req, res) => {
             if (error) {
                 console.log(error)
             } else {
-                res.redirect('/Nerd_Lounge/harrypotter')
+                res.redirect('/harrypotter')
             }
         }
     )
