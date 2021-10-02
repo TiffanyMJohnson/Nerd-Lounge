@@ -42,4 +42,7 @@ Examples of completed App
 ![Screen Shot 2021-10-02 at 6 52 51 AM](https://user-images.githubusercontent.com/85913543/135719792-8d9af447-2dda-4226-8417-eea9edd6d6ce.png)
 ![Screen Shot 2021-10-02 at 6 53 04 AM](https://user-images.githubusercontent.com/85913543/135719795-dea07118-f24d-4c55-99f2-ab0f06d083ff.png)
 
-
+Future planned enchancements:
+The ability to comment on a post.
+The ability to upload an image into a post.
+Enable able to only allow auther who created post to delete or edit.
